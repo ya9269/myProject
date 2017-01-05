@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <style>
+	
+  </style>
+ </head>
+
+ <body>
+ <canvas id="canvas" width="1000" height="1000" ></canvas>
+ <script>
+	var a=document.getElementById("canvas");   //获取画布
+	var c=document.getElementById("canvas").getContext('2d');  //获取画布绘制环境
+
+	function D(x, y, C) {
+			c.fillStyle = C ;     //点的颜色
+			c.fillRect(x, y, 1, 1);  //单个点大小和位置
+	}
+	function S(posX, posY, r, C) {  
+			s = Math.PI / 10;                  //  180/10，扩散角度（平均）
+			for ($i = 0; $i <= 20; $i++) {   
+
+					$x = r * Math.cos(s * $i);  //获取扩散点的x,y偏移量；
+					$y = r * Math.sin(s * $i);
+					D($x + posX, $y + posY, C);  //绘制扩散后的点。。。点的个数为（20），每个角度上一个点。
+
+			}
+	}
+	arr = [];                 //arr=[{r,x,i,c]},{},;
+	setInterval(function() {   //定时器
+			
+			c.fillStyle = '#000';
+			c.fillRect(0, 0, a.width, a.height);  
+			for (i = 0; i < arr.length; i++) {     //遍历数组，
+					S(arr[i].x, arr[i].y, arr[i].r, arr[i].c)  //绘制扩散出去的点	
+					arr[i].r++; 
+					if (arr[i].r > 200) {   //判断r是否大于200
+							arr.splice(i, 1);  //删除从第i个位置开始的1个元素
+					}
+			}
+	}, 50);     //50ms刷新一次
+//	co = [110, 180, 230];
+	co = [];
+	
+	 function col() {                 //颜色
+			for (i = 0; i < 3; i++) {	
+							co[i]=Math.floor(Math.random()*256);
+			}
+			return co;
+	} 
+	function add(e) {
+			 col();					//返回3种颜色
+			 console.log(co[0]);
+			 console.log(co[1]);
+			arr.push({
+					r: 1,      //原始半径大小 1
+					x: e.clientX,   //鼠标当前的X,y坐标
+					y: e.clientY,
+					c: 'rgb(' + co[0] + ',' + co[1] + ',' + co[2] + ')' //颜色
+			});
+	}
+	window.addEventListener('click', add);   //点击触发事件
+	window.addEventListener('mousemove', add);  //鼠标移上触发事件
+</script>
+ </body>
+</html>

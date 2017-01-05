@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/images/H5.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/images/aishow.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/images/flashing.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/bootlint.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/bootstrap.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/jquery-1.11.3.js" charset="UTF-8" />
+  </component>
+</project>

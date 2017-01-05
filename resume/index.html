@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zxy's resume</title>
+	<script src="./js/jquery-1.11.3.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!---- 开始滑动滚轮---->
+		<!--<script type="text/javascript" src="./js/move-top.js"></script>-->
+		<!--<script type="text/javascript" src="./js/easing.js"></script>-->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 	
+</head>
+<body>
+<!------headerbg starts--------->
+ <div id="top-top" class="headerbg">
+	 <!------header starts--------->
+
+
+	 <div class="navbar navbar-inverse navbar-fixed-top">
+		 <div class="container">
+			 <div class="navbar-header">
+				 <a class="navbar-brand logo" href="#">郑西娅的简历</a>
+				 <a data-toggle="collapse" class="navbar-toggle" href="#menu">
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+				 </a>
+			 </div>
+			 <!--折叠部分-->
+			 <div class="navbar-collapse collapse" id="menu">
+				 <!--后面折叠文字-->
+				 <ul class="nav navbar-nav croText">
+					 <li><a href="#about" class="scroll">关于我</a></li>
+					 <li class="divider"></li>
+					 <li><a href="#skills" class="scroll">职业技能</a></li>
+					 <li class="divider"></li>
+					 <li><a href="#port" class="scroll">我的项目</a></li>
+					 <li class="divider"></li>
+					 <li><a href="#contact" class="scroll">联系方式</a></li>
+				 </ul>
+			 </div>
+		 </div>
+	 </div>
+	 <!------header ends--------->
+	 <!------Banner starts--------->
+	   <div class="banner">
+	      <div class="container">
+						<div class="banner-info col-md-6 " style="margin: 1em auto">
+
+							<div class="bannerhead">
+								<h2> <span>我是郑西娅</span></h2>
+								<h3>我想成为一名web前端开发者</h3>
+								<p  style="margin-left: 200px;font-size: 1.5em">keep coding and carry on...</p>
+								<a class="downarrow scroll" href="#about"><span> </span></a>
+							</div>
+						</div>
+					</div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  <!------Banner ends-------->
+ </div>
+ <!------Headerbg ends-------->
+ <!------Content starts--------->
+ <div class="content">
+	 <!------About starts--------->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>关于我<span> </span></h2>
+				  </div>
+				 <span><p>工作经历</p></span>
+			 <div class="years">
+				 <h4><b>2016/8-2016/12</b></h4>
+				 <span><h4>杭州环宇工作室 | web前端开发</h4></span>
+				 <p>负责将UI设计好的图进行切片</p>
+				 <p>负责静态页面的编写</p>
+				 <p>配合后台人员完成交互</p>
+			 </div>
+			 <div class="years">
+				<h4><b>2014/7-2016/8</b></h4>
+				 <span><h4>杭州高腾机电科技有限公司 | 应用开发</h4></span>
+				 <p>负责应用层的代码编写</p>
+				 <p>与底层人员进行沟通，以便更好的使用底层进行开发</p>
+				 <p>了解客户需求，不断测试调试</p>
+				 <p>编写项目文档，写项目操作说明书</p>
+			  </div> 
+
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 <!------About Ends--------->
+	 
+	<!------SKILLS Starts--------->
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>职业技能<span> </span></h2>
+			  </div>
+				 <div class='container'><!-- 第一个技能条开始-->
+					 <div class="row">
+						 <div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">JavaScript</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 70%">
+								 <span class="sr-only">70% Complete</span>
+							 </div>
+						 </div>
+
+					 </div>
+				 </div><!-- 第一个技能条结束-->
+
+				 <!-- 第二个技能条开始-->
+				 <div class='container'>
+					 <div class="row">
+							<div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">HTML+CSS</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 85%">
+								 <span class="sr-only">85% Complete</span>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- 第二个技能条结束-->
+
+				 <!-- 第三个技能条开始-->
+				 <div class='container'>
+					 <div class="row">
+							<div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">jQuery</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 70%">
+								 <span class="sr-only">70% Complete</span>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- 第三个技能条结束-->
+
+
+				 <!-- 第四个技能条开始-->
+				 <div class='container'>
+					 <div class="row">
+							<div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">BootStrap</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 65%">
+								 <span class="sr-only">65% Complete</span>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- 第四个技能条结束-->
+
+
+				 <!-- 第五个技能条开始-->
+				 <div class='container'>
+					 <div class="row">
+							<div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">AngularJS</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 70%">
+								 <span class="sr-only">70% Complete</span>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- 第五个技能条结束-->
+				 <!-- 第六个技能条开始-->
+				 <div class='container'>
+					 <div class="row">
+							<div class="col-md-3 col-sm-9"><h3 style="color: #fff;vertical-align: top">Photoshop</h3></div>
+						 <div class="progress" style="margin-top: 23px">
+							 <div class="progress-bar progress-bar-striped "  style="width: 50%">
+								 <span class="sr-only">50% Complete</span>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 <!-- 第六个技能条结束-->
+
+					<!--/-->
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 <!------SKILLS Ends--------->
+		 <!------PORTFOLIO Starts--------->
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>我的项目<span> </span></h2>
+			  </div>
+			 <div class="container">
+				 <div class="portfolio-grids">
+					 <div class="portfolio-grid col-sm-12 col-md-4">
+						 <div class="mask-container box-blur">
+							 <img class="img-responsive"  src="images/flashing.jpg" alt=""/>
+
+							 <div data-toggle="mask" class="img-mask">
+
+								 <h4>闪电商城</h4>
+								 <h5>使用HTML+CSS进行布局，JS，Jquery实现动画效果，通过MySQL建立数据库，使用PHP操作数据库，再经过Ajax动态生成页面。实现用户登录注册，购物车等功能</h5>
+							 </div>
+						 </div>
+						 <p>PC端商城项目——闪电（flashing）商城</p>
+						 <a class="rightarrow" href="http://2.zxy1.applinzi.com" target="_blank"><span> </span></a>
+					 </div><!-- shandian -->
+					 <div class="portfolio-grid col-sm-12 col-md-4">
+						 <div class="mask-container box-blur">
+							 <img class="img-responsive"  src="images/aishow.jpg" alt=""/>
+
+							 <div data-toggle="mask" class="img-mask">
+								 <h4>艾秀官网</h4>
+								 <h5>
+									 使用ionic,基于AngularJs进行开发。通过路由状态传参实现各个页面之间的跳转以及数据传递。利用行内依赖注入实现动画。使用PHP操作数据库，动态生成数据。实现用户下单功能。
+								 </h5>
+							 </div>
+						 </div>
+						 <p>手机APP——艾秀（aishow）内衣网页</p>
+						 <a class="rightarrow" href="http://zxy2.applinzi.com/#/AsStart" target="_blank"><span> </span></a>
+					 </div><!-- aishow -->
+					 <div class="portfolio-grid col-sm-12 col-md-4">
+						 <div class="mask-container box-blur">
+							 <img class="img-responsive"  src="images/H5.jpg" alt=""/>
+
+							 <div data-toggle="mask" class="img-mask">
+								 <h4>H5小模块</h4>
+								 <h5>使用JavaScript以及H5新特性实现画圆圈功能</h5>
+							 </div>
+						 </div>
+						 <p>美丽圆圈</p>
+						 <a class="rightarrow" href="fireFlower.html" target="_blank"><span> </span></a>
+					 </div><!-- H5 -->
+					 <div class="clear"> </div>
+				 </div>
+			 </div>
+			 <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-sm-12 col-md-4">
+						  <div class="mask-container box-blur">
+							  <img class="img-responsive"  src="images/intel.png" alt=""/>
+
+							  <div data-toggle="mask" class="img-mask">
+								  <h4>intel首页</h4>
+								  <h5>使用bootstrap框架，深度定制响应式页面</h5>
+							  </div>
+						  </div>
+
+						  <p>intel首页</p>
+						  <a class="rightarrow" href="full_intel/index.html" target="_blank"><span> </span></a>
+					  </div><!-- intel首页 -->
+					  <div class="portfolio-grid col-sm-12 col-md-4">
+							<div class="mask-container box-blur">
+								<img class="img-responsive"  src="images/2048.png" alt=""/>
+								<div data-toggle="mask" class="img-mask">
+									<h4>2048小游戏</h4>
+									<h5>使用JavaScript实现2048web游戏</h5>
+								</div>
+							</div>
+						  <p>web2048游戏</p>
+						  <a class="rightarrow" href="2048/2048.html" target="_blank"><span> </span></a>
+					  </div><!-- 2048 -->
+					  <div class="portfolio-grid col-sm-12 col-md-4">
+							<a href="#">
+								<img src="images/not-finish.png" alt="intel首页" class="img-responsive img-thumbnail"/>
+							</a>
+							<p>正在开发中……</p>
+							<a class="rightarrow" href="#"><span></span></a>
+						</div><!-- 正在开发 -->
+					  <div class="clear"> </div>
+						<a class="portdown scroll" href="#contact"><span></span></a>
+				  </div>
+
+			  </div>
+		 </div>
+  </div>
+  <!------Content Ends-------->
+  
+  <!------FOOTER Starts----------->
+  <div  id="contact" class="footer">
+      <div class="container">
+	  
+		   <div class="contact-section text-center">
+			  <h2><span> </span>联系方式<span> </span></h2>
+		  </div>
+		 <div class="row">
+		 
+			 <div class="col-md-6">
+				  <div class="footer-left">
+						<div class="social-icons">
+
+							<p><span class="glyphicon glyphicon-envelope " style="color: #fff;font-size: 1.5em"></span>
+								&nbsp;&nbsp;&nbsp;&nbsp;18767150519@163.com</p>
+							<p><span class="glyphicon glyphicon-phone" style="color: #fff;font-size: 1.5em"></span>
+								&nbsp;&nbsp;&nbsp;&nbsp;18767150519</p>
+
+					   </div>
+					   <p>自我学习能力和专注力强，对新技术和新事物永远保持好奇心。</p>
+				  </div>
+			 </div>
+			  
+			  <div class="col-md-6">
+				  <div class="footer-right">
+				 <div class="form">
+				 <form>
+					 <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 <input type="text" class="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}">
+					 <textarea rows="2" cols="70" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+					 <div class="clear"> </div>
+					 <input type="submit" value="SEND"> 
+				 </form>
+				 </div>
+				  </div>
+				  <div class="clear"></div>
+				  <p class="copy-right">@chaos_JS</a></p>
+			  </div>
+		 </div>
+	 </div>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+	  
+ </div>
+
+
+<script>/*遮罩层的js代码*/
+	$('[data-toggle="mask"]').hover(function(){
+		$(this).css({top: '0'});
+	}, function(){
+		$(this).css({top: '75%'});
+	});
+</script>
+ </body>
+ </html>
+ 
+   
